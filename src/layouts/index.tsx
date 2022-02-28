@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import { Link, Outlet, useLocation } from 'umi';
-
-import { Button, Descriptions, Result, Avatar, Space, Statistic } from 'antd';
-import { LikeOutlined, UserOutlined } from '@ant-design/icons';
+import {Outlet, history } from "umi"
+import { Avatar } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 import type { ProSettings } from '@ant-design/pro-layout';
 import ProLayout, { PageContainer, SettingDrawer } from '@ant-design/pro-layout';
 import defaultProps from './_defaultProps';
 import Logo from "./_logo";
-
 
 import styles from './index.less';
 
@@ -27,7 +25,9 @@ export default function Layout() {
         onMenuHeaderClick={(e) => console.log(e)}
         menuItemRender={(menuItemProps, defaultDom) => (
           <a onClick={() => {
+            console.log(menuItemProps);
             setPathname(menuItemProps.path || "/")
+            history.push(menuItemProps.path || "/")
           }}>
             {defaultDom}
           </a>
@@ -39,7 +39,7 @@ export default function Layout() {
         )}
         {...settings}
       >
-        <PageContainer />
+        <PageContainer content={<Outlet/>}/>
       </ProLayout>
       <SettingDrawer
         pathname={pathname}

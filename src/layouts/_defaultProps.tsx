@@ -2,7 +2,7 @@
  * @Author: wangyi
  * @Description: 
  * @Date: 2022-02-25 17:59:33
- * @LastEditTime: 2022-02-25 18:23:57
+ * @LastEditTime: 2022-02-28 11:31:40
  */
 import React from 'react';
 import { SmileOutlined, CrownOutlined, TabletOutlined, AntDesignOutlined } from '@ant-design/icons';
@@ -12,7 +12,7 @@ export default {
     routes: [
       {
         path: "/home",
-        name: "主页",
+        name: "主页1",
         icon: <SmileOutlined />,
         component: './HomePage',
       },
