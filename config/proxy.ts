@@ -4,25 +4,25 @@
  * https://pro.ant.design/docs/deploy
  */
 export default {
-  dev: {
-    '/api/': {
-      target: 'http://localhost:8085',
-      changeOrigin: true,
-      pathRewrite: { '^': '' },
-    },
-  },
-  test: {
-    '/api/': {
-      target: '',
-      changeOrigin: true,
-      pathRewrite: { '^': '' },
-    },
-  },
-  pre: {
-    '/api/': {
-      target: '',
-      changeOrigin: true,
-      pathRewrite: { '^': '' },
-    },
-  },
+  // dev: {
+  //   '/api/': {
+  //     target: 'http://localhost:8085',
+  //     changeOrigin: true,
+  //     pathRewrite: { '^': '' },
+  //   },
+  // },
+  // test: {
+  //   '/api/': {
+  //     target: '',
+  //     changeOrigin: true,
+  //     pathRewrite: { '^': '' },
+  //   },
+  // },
+  // pre: {
+  //   '/api/': {
+  //     target: '',
+  //     changeOrigin: true,
+  //     pathRewrite: { '^': '' },
+  //   },
+  // },
 };

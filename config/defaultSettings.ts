@@ -13,7 +13,7 @@ const proSettings: DefaultSettings = {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: '',
+  title: 'Umi-Next',
   // 拂晓蓝
   primaryColor: '#1890ff',
   borderRadiusBase: '3px',
@@ -25,6 +25,7 @@ const proSettings: DefaultSettings = {
   menuDarkBg: '#3e3e3e',
   textColor: '#666',
   fontFamily: 'Hiragino Sans GB,Helvetica, sans-serif',
+  logo: "https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg",
   tablePaddingVertical: '8px',
   tablePaddingHorizontal: '4px',
 };
