@@ -1,31 +1,18 @@
 /*
  * @Author: wangyi
  * @Description: 
- * @Date: 2022-02-25 16:10:23
- * @LastEditTime: 2022-02-25 17:30:52
+ * @Date: 2022-03-01 16:07:33
+ * @LastEditTime: 2022-03-01 16:10:38
  */
-import {defineConfig} from "umi"
+import {defineConfig} from "umi";
+import defaultSettings from './defaultSettings';
+import proxy from './proxy';
 
 export default defineConfig({
-  npmClient: 'pnpm',
-  conventionRoutes: {
-    exclude: [
-      /\/components\//,
-      /\/models\//,
-      /\/services\//,
-      /\/utils\//,
-      /\/assets\//,
-      /\/styles\//,
-      /\/router\//,
-      /\/config\//,
-      /\/locales\//,
-      /\/public\//,
-      /\/api\//,
-      /\/constants\//,
-      /\/typing\//,
-    ]
-  },
-  alias: {
-    "@": "./src",
-  }
+  model: {},
+  antd: {},
+  layout: false,
+  request: {},
+  fastRefresh: true,
+  proxy: proxy[REACT_APP_ENV],
 })

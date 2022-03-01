@@ -1,28 +1,27 @@
 {
-  "private": true,
+  "name": "umi-pro-todo",
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
-    "dev": "umi dev",
-    "build": "umi build",
-    "postinstall": "umi setup",
-    "start": "npm run dev"
+    "dev": "umipro dev"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-layout": "^6.33.0",
+    "@umijs/pro": "^4.0.0-beta.16",
     "ahooks": "^3.1.10",
-    "antd": "^4.18.8",
-    "axios": "^0.26.0",
-    "dayjs": "^1.10.7",
-    "js-md5": "^0.7.3",
+    "antd": "^4.18.9",
+    "dayjs": "^1.10.8",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^6.2.1",
-    "umi": "^4.0.0-rc.3",
-    "umi-request": "^1.4.0"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "typescript": "^4.1.2"
+    "@typescript-eslint/parser": "^5.13.0",
+    "eslint": "^8.10.0",
+    "eslint-config-alloy": "^4.5.1",
+    "eslint-plugin-react": "^7.29.2",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "typescript": "^4.6.2"
   }
 }
