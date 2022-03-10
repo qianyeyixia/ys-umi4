@@ -16,7 +16,7 @@ export default defineConfig({
   dva: {
     // hmr: true,
   },
-  srcTranspiler: 'esbuild',
+  mfsu: false,
   layout: {
     // https://umijs.org/zh-CN/plugins/plugin-layout
     locale: true,
@@ -343,8 +343,6 @@ export default defineConfig({
     basePath: '/',
   },
   // Fast Refresh 热更新
-  fastRefresh: true,
-  mfsu: {},
   chainWebpack(memo: any) {
     memo.plugin('monaco-editor').use(MonacoEditorWebpackPlugin, []);
     return memo;

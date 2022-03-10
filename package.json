@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "umipro dev"
+    "dev": "umipro dev",
+    "vite dev": "umipro dev -- --vite"
   },
   "author": "",
   "license": "ISC",
@@ -31,7 +32,7 @@
     "rc-util": "^5.18.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "umi": "4.0.0-rc.3"
+    "umi": "4.0.0-rc.4"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^5.13.0",
